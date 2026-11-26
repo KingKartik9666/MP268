@@ -1,0 +1,20 @@
+﻿# raw data (tracked with DVC / provided by faculty, never committed directly)
+/data/train.csv
+/data/later.csv
+/data/holdout_features.csv
+/data/raw/train.csv
+/data/raw/later.csv
+
+# problem files from the zip
+/PROBLEM.md
+/STUDENT_HANDBOOK.md
+/GROUP.md
+/findings.yaml
+
+# python / tooling
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+mlruns/
+mlartifacts/
