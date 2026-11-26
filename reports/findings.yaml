@@ -1,0 +1,56 @@
+# MP268 findings --- filled by `python -m mp268.report` from the code outputs.
+# Data problems: src/mp268/findings.py, tracking: src/mp268/train.py, monitoring: src/mp268/monitor.py
+
+group_id: G252
+problem_id: MP268
+data_issues:
+  leaking_column:
+    present: true
+    column: litres_from_tank_dip_next_day
+  unit_mixup:
+    present: true
+    column: highway_distance_km
+    group_value: Industrial
+    factor: 1000
+  sentinel_value:
+    present: true
+    column: staff
+    value: 9999
+    count: 45
+  duplicate_rows:
+    present: true
+    count: 54
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null
+    end_date: null
+  target_typos:
+    present: false
+    count: null
+  spelling_variants:
+    present: true
+    column: ownership
+    true_levels: 3
+tracking:
+  experiment_name: mp268-fuel-sales
+  best_run_id: 493f797d674c427298d6ca510e25b48e
+  registered_model_name: mp268-fuel-sales-model
+  champion_version: 2
+monitoring:
+  psi:
+    highway_distance_km: 0.0304
+    nearby_pumps: 0.0394
+    price_rs: 0.066
+    trucks_passing: 4.5384
+    temp_c: 0.0492
+    staff: 0.0361
+  most_drifted_feature: trucks_passing
+  mae_by_group:
+    Highway: 2104.5
+    City: 2090.3
+    Industrial: 9674.7
+  worst_served_group: Industrial
+  mae_v1_on_check: 3722.7
+  mae_v2_on_check: 2203.8
+  decision: promote

@@ -1,0 +1,27 @@
+{
+  "psi": {
+    "highway_distance_km": 0.0304,
+    "nearby_pumps": 0.0394,
+    "price_rs": 0.066,
+    "trucks_passing": 4.5384,
+    "temp_c": 0.0492,
+    "staff": 0.0361
+  },
+  "most_drifted_feature": "trucks_passing",
+  "mae_by_group": {
+    "City": 2090.3,
+    "Highway": 2104.5,
+    "Industrial": 9674.7
+  },
+  "worst_served_group": "Industrial",
+  "mae_later_v1": 4297.4,
+  "mae_v1_on_check": 3722.7,
+  "mae_v2_on_check": 2203.8,
+  "improvement_pct": 40.8,
+  "decision": "promote",
+  "v2_run_id": "51bb072624eb4cdeafb8ca1eabbf8a13",
+  "v2_version": 2,
+  "champion_version": 2,
+  "n_later_first": 210,
+  "n_later_check": 90
+}
