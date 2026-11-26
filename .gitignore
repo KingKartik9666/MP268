@@ -1,28 +1,93 @@
-﻿# raw data (tracked with DVC / provided by faculty, never committed directly)
+﻿
+# =========================
+# Dataset files (tracked with DVC / provided by faculty)
+# Do not commit raw datasets directly
+# =========================
 /data/train.csv
 /data/later.csv
 /data/holdout_features.csv
 /data/raw/train.csv
 /data/raw/later.csv
 
-# problem files from the zip
+# =========================
+# Assignment files provided by faculty
+# =========================
 /PROBLEM.md
 /STUDENT_HANDBOOK.md
 /GROUP.md
 /findings.yaml
 
-# python / tooling
+# =========================
+# Python cache and compiled files
+# =========================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# =========================
+# Virtual environments
+# =========================
 .venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Testing and coverage
+# =========================
 .pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# =========================
+# MLflow artifacts
+# =========================
 mlruns/
 mlartifacts/
-*.egg-info/
 
-# generated outputs that are rebuilt from code
+# =========================
+# Python packaging
+# =========================
+*.egg-info/
+dist/
+build/
+
+# =========================
+# Jupyter notebooks
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# IDE and editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS-generated files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Generated processed datasets
+# Rebuilt from source data and cleaning code
+# =========================
 /data/processed/
 
-# local only: ML-pipeline workbench (EDA notebook, figures) and the staging folder for Kartik's commits
+# =========================
+# Local workbench and temporary staging
+# =========================
 ml_pipeline/
 to_push/
+
+# =========================
+# Logs and temporary files
+# =========================
+*.log
+tmp/
+temp/
