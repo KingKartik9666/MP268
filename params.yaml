@@ -1,0 +1,39 @@
+paths:
+  raw_train: "data/raw/train.csv"
+  raw_later: "data/raw/later.csv"
+  holdout: "data/raw/holdout_features.csv"
+  clean_train: "data/processed/train_clean.csv"
+  model_path: "models/model.joblib"
+  predictions_path: "predictions/holdout_predictions.csv"
+
+features:
+  numeric:
+    - highway_distance_km
+    - nearby_pumps
+    - price_rs
+    - trucks_passing
+    - temp_c
+    - staff
+  categorical:
+    - ownership
+    - zone
+  target: "litres_per_day"
+  leaking_column: "litres_from_tank_dip_next_day"
+
+cleaning:
+  unit_mixup_zone: "Industrial"
+  unit_mixup_column: "highway_distance_km"
+  unit_mixup_factor: 1000.0
+  staff_sentinel: 9999
+  ownership_map:
+    public_sector: "public_sector"
+    "pub.": "public_sector"
+    "public sector": "public_sector"
+    cooperative: "cooperative"
+    "coo.": "cooperative"
+    private: "private"
+    "pri.": "private"
+
+validation:
+  max_trucks_passing: 4000
+  min_staff: 1.5
