@@ -1,0 +1,4 @@
+# Never convert line endings in data or the MLflow DB: the marking tool checks their hashes.
+*.csv -text
+*.db binary
+*.joblib binary

@@ -18,3 +18,11 @@ __pycache__/
 .pytest_cache/
 mlruns/
 mlartifacts/
+*.egg-info/
+
+# generated outputs that are rebuilt from code
+/data/processed/
+
+# local only: ML-pipeline workbench (EDA notebook, figures) and the staging folder for Kartik's commits
+ml_pipeline/
+to_push/
