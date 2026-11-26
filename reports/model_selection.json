@@ -1,0 +1,55 @@
+{
+  "data_sha256": "8d4322d8c1fbf2a3dc00a4750b4a445070e4294391f2d74f797b7a8b09f9e722",
+  "chosen": "ridge_a1",
+  "ranking": [
+    {
+      "name": "ridge_a1",
+      "run_id": "0ed7e32488c14782af51aed60fbfbc03",
+      "mae_train": 891.3,
+      "mae_val": 858.5,
+      "rmse_val": 1036.8
+    },
+    {
+      "name": "ridge_a0.1",
+      "run_id": "2141702070ca424b915aa0e6960ad26b",
+      "mae_train": 891.2,
+      "mae_val": 858.9,
+      "rmse_val": 1037.6
+    },
+    {
+      "name": "ridge_a10",
+      "run_id": "1e8b82be78fe4f4cbda04a56ca948633",
+      "mae_train": 899.1,
+      "mae_val": 861.6,
+      "rmse_val": 1036.3
+    },
+    {
+      "name": "gbr_depth3",
+      "run_id": "491977aac5a046e89b2cd34b3efc4a85",
+      "mae_train": 493.6,
+      "mae_val": 1044.4,
+      "rmse_val": 1306.5
+    },
+    {
+      "name": "gbr_depth2",
+      "run_id": "34baedbbf9d04c19a5a3c4477a7bd953",
+      "mae_train": 669.4,
+      "mae_val": 1045.0,
+      "rmse_val": 1265.5
+    },
+    {
+      "name": "random_forest",
+      "run_id": "18bfbe6284de415da89d3471d5aef060",
+      "mae_train": 1161.2,
+      "mae_val": 1814.9,
+      "rmse_val": 2307.7
+    },
+    {
+      "name": "median_baseline",
+      "run_id": "a0439524e9f6496e8868b92ca756a35e",
+      "mae_train": 4466.6,
+      "mae_val": 4171.8,
+      "rmse_val": 5209.8
+    }
+  ]
+}

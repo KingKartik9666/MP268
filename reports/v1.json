@@ -1,0 +1,9 @@
+{
+  "experiment_name": "mp268-fuel-sales",
+  "best_run_id": "493f797d674c427298d6ca510e25b48e",
+  "registered_model_name": "mp268-fuel-sales-model",
+  "champion_version": 1,
+  "model": "ridge_a1",
+  "mae_val": 858.5,
+  "mae_test": 881.1
+}
