@@ -1,0 +1,25 @@
+# Version control and local environments
+.git
+.gitignore
+.venv
+venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local/editor files
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# Dataset and experiment artifacts (keep image build lightweight)
+data/
+.dvc/cache/
+mlruns/
+.pytest_cache/
+
+# Generated archives
+*.zip
